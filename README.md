@@ -2,7 +2,7 @@
 
 Aplicação que entrega dicas personalizadas de produtividade, estudo e autocuidado para mulheres desenvolvedoras com base na fase do ciclo menstrual.
 
-![CycleDev preview](./assets/cycleDev-preview.gif)
+![CycleDev preview](./src/cycleDev-preview.gif)
 
 ## 📌 Sobre o projeto
 
