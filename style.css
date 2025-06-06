@@ -1,0 +1,67 @@
+:root {
+  --bg-color:linear-gradient(135deg, #a18cd1, #fbc2eb);
+  --primary-color: #81398f;
+  --primary-text-color:#FFF;
+  --secondary-text-color:#000;
+}
+
+[data-tema="dark"] {
+  --cor-fundo: #1c1b2f;
+  --cor-texto: #f0e6f6;
+  --cor-botao: #c98bdb;
+}
+
+
+
+
+
+body {
+  background: var(--bg-color);
+  min-height: 100vh;
+  margin: 4rem;
+  font-family: "Edu SA Hand", cursive;
+  color: var(--secondary-text-color);
+}
+
+.title {
+  text-align:center;
+  color:var(--primary-color);
+  font-weight: 800;
+}
+
+.content {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#input-date {
+  background-color:#fbc2eb;
+  font-size: 1.3rem;
+  font-weight: 200;
+  margin: 3rem 0;
+}
+button {
+  border:none;
+  background-color:var(--primary-color);
+  color: var(--primary-text-color);
+  padding: .5rem 1rem;
+  border-radius: 1rem;
+  margin: 0 1rem 3rem 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor:pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover{
+  scale: 1.05;
+}
+
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.elemento {
+  animation: fadeInUp 0.8s ease-out;
+}
