@@ -5,20 +5,27 @@
   --secondary-text-color:#000;
 }
 
-[data-tema="dark"] {
-  --cor-fundo: #1c1b2f;
-  --cor-texto: #f0e6f6;
-  --cor-botao: #c98bdb;
+:root[data-theme='dark'] {
+  --bg-color:linear-gradient(145deg, 
+    #0c0c0b 25%, 
+    #1a0b1f 35%, 
+    #0c0c0b 50%, 
+    #000000 65%);
+  --primary-color: #81398f;
+  --primary-text-color:#000;
+  --secondary-text-color:#FFF;
 }
 
-
-
+.toggle{
+  font-size: 2rem;
+  cursor:pointer;
+}
 
 
 body {
   background: var(--bg-color);
   min-height: 100vh;
-  margin: 4rem;
+  margin: 2rem 3rem .5rem  3rem;
   font-family: "Edu SA Hand", cursive;
   color: var(--secondary-text-color);
 }
@@ -27,6 +34,19 @@ body {
   text-align:center;
   color:var(--primary-color);
   font-weight: 800;
+}
+
+h2 {
+  text-align:center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: .810rem;
+  font-weight: 500;
+  margin-top: 70px;
+  margin-bottom: 0;
 }
 
 .content {
@@ -40,13 +60,20 @@ body {
   font-weight: 200;
   margin: 3rem 0;
 }
+
+.cycleDev__info-paragraph {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--secondary-text-color);
+}
+
 button {
   border:none;
   background-color:var(--primary-color);
   color: var(--primary-text-color);
   padding: .5rem 1rem;
   border-radius: 1rem;
-  margin: 0 1rem 3rem 1rem;
+  margin: 0 1rem 2rem 1rem;
   text-transform: uppercase;
   font-weight: 700;
   cursor:pointer;
@@ -55,13 +82,4 @@ button {
 
 button:hover{
   scale: 1.05;
-}
-
-
-@keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-.elemento {
-  animation: fadeInUp 0.8s ease-out;
 }
