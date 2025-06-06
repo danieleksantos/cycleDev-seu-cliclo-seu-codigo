@@ -2,8 +2,8 @@
 
 Aplicação que entrega dicas personalizadas de produtividade, estudo e autocuidado para mulheres desenvolvedoras com base na fase do ciclo menstrual.
 
-![CycleDev preview](./src/cycleDev-preview.gif)
-
+<div style="text-align:center;"> ![CycleDev preview](./src/cycleDev-preview.gif)
+</div>
 ## 📌 Sobre o projeto
 
 O **CycleDev** é uma versão personalizada do tradicional *To Do List*, com o objetivo de treinar **manipulação do DOM**, lógica condicional e uso de **variáveis CSS** em temas dinâmicos.  
